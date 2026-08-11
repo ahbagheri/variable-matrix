@@ -1,0 +1,50 @@
+{
+  "name": "variable-matrix",
+  "version": "1.0.0",
+  "description": "View and manage Azure Pipelines Library variable groups across environments in one matrix.",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "package": "npm run build && tfx extension create --manifest-globs vss-extension.json --overrides-file configs/release.json --output-path out/variable-matrix.vsix",
+    "package:dev": "tfx extension create --manifest-globs vss-extension.json --overrides-file configs/dev.json --output-path out/variable-matrix-local.vsix"
+  },
+  "keywords": [
+    "azure-devops",
+    "azure-pipelines",
+    "variable-groups",
+    "extension",
+    "matrix"
+  ],
+  "author": "Amir H. Bagheri",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahbagheri/variable-matrix.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ahbagheri/variable-matrix/issues"
+  },
+  "homepage": "https://github.com/ahbagheri/variable-matrix#readme",
+  "dependencies": {
+    "azure-devops-extension-sdk": "^5.0.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.3",
+    "@vitejs/plugin-react": "^6.0.5",
+    "azure-devops-ui": "^2.277.0",
+    "jsdom": "^29.1.1",
+    "sass": "^1.102.0",
+    "tfx-cli": "^0.23.4",
+    "vite": "^8.2.1",
+    "vite-plugin-mkcert": "^2.1.0",
+    "vitest": "^4.1.10"
+  }
+}

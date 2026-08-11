@@ -1,0 +1,7 @@
+{
+  "id": "variable-matrix-local",
+  "version": "1.0.0",
+  "name": "Variable Matrix (Local)",
+  "public": false,
+  "baseUri": "https://localhost:3500"
+}
