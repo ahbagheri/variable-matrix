@@ -2,9 +2,11 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import mkcert from 'vite-plugin-mkcert';
 
-export default defineConfig({
+// Relative base for the production build so assets resolve under the extension's
+// CDN folder (dev keeps /dist/ to match the localhost hub URL).
+export default defineConfig(({ command }) => ({
   plugins: [react(), mkcert()],
-  base: '/dist/',
+  base: command === 'build' ? './' : '/dist/',
   server: {
     port: 3500,
     strictPort: true,
@@ -19,4 +21,4 @@ export default defineConfig({
     globals: true,
     include: ['src/**/*.{test,spec}.{js,jsx}'],
   },
-});
+}));

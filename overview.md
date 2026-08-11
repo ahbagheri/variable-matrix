@@ -4,7 +4,7 @@
 
 Variable Matrix adds a hub under **Pipelines** that lines up your Library variable groups side‑by‑side — `shared`, `dev`, `qa`, `uat`, `staging`, `production` — so you can read, compare, and edit configuration across environments without clicking through each group one at a time.
 
-![Variable Matrix](images/screenshot-matrix.png)
+![Variable Matrix — environment matrix](images/screenshot-full-page.png)
 
 ## Highlights
 
@@ -19,6 +19,20 @@ Variable Matrix adds a hub under **Pipelines** that lines up your Library variab
 - **Column filter** — show/hide the shared and/or environment columns.
 - **Project‑wide settings** — environment/alias configuration is stored per project on Microsoft‑hosted extension storage (falls back to your browser when you lack permission).
 - **Themed** — follows the Azure DevOps light/dark theme.
+
+## Screenshots
+
+**The environment matrix — every variable across every environment for the selected application.**
+
+![Full page](images/screenshot-full-page.png)
+
+**Add a variable to the shared group or to specific environments.**
+
+![Add variable](images/screenshot-new-variable.png)
+
+**Scaffold a whole new application across environments in one step.**
+
+![New application](images/screenshot-new-application.png)
 
 ## Requirements
 
@@ -41,7 +55,7 @@ A variable group name is split into **application** + **separator** + **environm
 ```
 checkin-webapp-dev        → app "checkin-webapp", env "dev"
 ApiGateway-Common         → app "ApiGateway",     env "shared"  (alias of shared)
-MyWestCoastDental-Prod     → app "MyWestCoastDental", env "production" (alias of production)
+PaymentsApi-Prod          → app "PaymentsApi",    env "production" (alias of production)
 ```
 
 Detected separators: `-`, `_`, `.`, and space. Environments and their aliases are configured in **Settings**.
