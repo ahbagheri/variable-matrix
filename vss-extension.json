@@ -5,7 +5,7 @@
   "name": "Variable Matrix",
   "description": "View and manage Azure Pipelines Library variable groups across dev, QA, staging, and production in one matrix.",
   "publisher": "ahbagheri",
-  "public": false,
+  "public": true,
   "categories": [
     "Azure Pipelines"
   ],
