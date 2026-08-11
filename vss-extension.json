@@ -1,6 +1,6 @@
 {
   "manifestVersion": 1,
-  "id": "variable-matrix",
+  "id": "variablematrix",
   "version": "1.0.0",
   "name": "Variable Matrix",
   "description": "View and manage Azure Pipelines Library variable groups across dev, QA, staging, and production in one matrix.",
