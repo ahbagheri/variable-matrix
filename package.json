@@ -1,6 +1,6 @@
 {
   "name": "variable-matrix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "View and manage Azure Pipelines Library variable groups across environments in one matrix.",
   "type": "commonjs",
   "scripts": {
